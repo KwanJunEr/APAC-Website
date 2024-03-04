@@ -6,42 +6,40 @@ https://templatemo.com/tm-575-leadership-event
 
 */
 
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #0dcaf0;
-  --secondary-color:              #0d6efd;
-  --section-bg-color:             #f0f8ff;
-  --dark-color:                   #000000;
-  --navbar-bg-color:              #273053;
-  --p-color:                      #717275;
-  --highlight-icon-color:         #ff0100;
+  --white-color: #ffffff;
+  --primary-color: #0dcaf0;
+  --secondary-color: #0d6efd;
+  --section-bg-color: #f0f8ff;
+  --dark-color: #000000;
+  --navbar-bg-color: #273053;
+  --p-color: #717275;
+  --highlight-icon-color: #ff0100;
 
-  --body-font-family:             'DM Sans', sans-serif;
+  --body-font-family: "DM Sans", sans-serif;
 
-  --h1-font-size:                 62px;
-  --h2-font-size:                 48px;
-  --h3-font-size:                 36px;
-  --h4-font-size:                 32px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --menu-font-size:               16px;
-  --copyright-text-font-size:     16px;
+  --h1-font-size: 62px;
+  --h2-font-size: 48px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --menu-font-size: 16px;
+  --copyright-text-font-size: 16px;
 
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-bold:             700;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family); 
+  background: var(--white-color);
+  font-family: var(--body-font-family);
 }
-
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -105,7 +103,7 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -169,7 +167,10 @@ strong {
   left: -30px;
 }
 
-.avatar-image-left + .avatar-image-left + .avatar-image-left + .avatar-image-left {
+.avatar-image-left
+  + .avatar-image-left
+  + .avatar-image-left
+  + .avatar-image-left {
   left: -40px;
 }
 
@@ -177,7 +178,6 @@ strong {
   display: inline-block;
   vertical-align: top;
 }
-
 
 /*---------------------------------------
   CUSTOM ICON               
@@ -222,7 +222,8 @@ strong {
   border-top-color: var(--primary-color);
   border-right-color: var(--primary-color);
   border-bottom-color: var(--primary-color);
-  transition: border-top-color .15s linear,border-right-color .15s linear .1s,border-bottom-color .15s linear .2s;
+  transition: border-top-color 0.15s linear,
+    border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
 }
 
 .custom-icon:hover::after {
@@ -230,9 +231,8 @@ strong {
   border-left-width: 2px;
   border-right-width: 2px;
   transform: rotate(270deg);
-  transition: transform .4s linear 0s,border-left-width 0s linear .35s;
+  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
 }
-
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -268,10 +268,9 @@ strong {
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
 .navbar-nav .nav-link.custom-btn:hover {
   background: var(--primary-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   color: var(--white-color);
 }
-
 
 /*---------------------------------------
   NAVIGATION              
@@ -288,8 +287,7 @@ strong {
   transition: all 0.3s;
   padding-top: 15px;
   padding-bottom: 15px;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .navbar-brand {
@@ -322,7 +320,7 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--primary-color);
 }
@@ -350,7 +348,8 @@ strong {
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
   transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
@@ -375,14 +374,15 @@ strong {
 .navbar-toggler .navbar-toggler-icon:after {
   transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
   background: black;
   width: 30px;
   height: 2px;
-  content: '';
+  content: "";
 }
 
 .navbar-toggler .navbar-toggler-icon::before {
@@ -392,7 +392,6 @@ strong {
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
 }
-
 
 /*---------------------------------------
   HIGHLIGHT              
@@ -473,7 +472,6 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
@@ -484,7 +482,9 @@ strong {
 
 .hero::after {
   content: "";
-  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%) repeat
+    scroll 0% 0%;
   position: absolute;
   top: 0;
   right: 0;
@@ -532,7 +532,6 @@ strong {
   border-right: 0;
 }
 
-
 /*---------------------------------------
   SPEAKERS              
 -----------------------------------------*/
@@ -561,7 +560,7 @@ strong {
 
 .speakers-info {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -636,12 +635,19 @@ strong {
   height: auto;
 }
 
-
 /*---------------------------------------
   SCHEDULE              
 -----------------------------------------*/
 .nav-tabs {
   border-bottom: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--white-color);  
 }
 
 .nav-tabs .nav-link,
@@ -675,16 +681,16 @@ strong {
   border-left-color: transparent;
 }
 
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   border-left-color: var(--primary-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .nav-tabs .nav-link.active h3,
-.nav-tabs .nav-link:focus h3, 
+.nav-tabs .nav-link:focus h3,
 .nav-tabs .nav-link:hover h3 {
   color: var(--primary-color);
 }
@@ -693,12 +699,11 @@ strong {
   border-radius: 20px;
 }
 
-
 /*---------------------------------------
   CALL TO ACTION              
 -----------------------------------------*/
 .call-to-action {
-  background-image: url('../images/terren-hurst-blgOFmPIlr0-unsplash.jpg');
+  background-image: url("../images/terren-hurst-blgOFmPIlr0-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -732,7 +737,6 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   PRICING              
 -----------------------------------------*/
@@ -755,7 +759,6 @@ strong {
 .pricing-title {
   color: var(--white-color);
 }
-
 
 /*---------------------------------------
   VENUE               
@@ -784,12 +787,11 @@ strong {
   border-radius: 20px;
 }
 
-
 /*---------------------------------------
   CONTACT              
 -----------------------------------------*/
 .contact {
-  background-image: url('../images/maria-stewart-p4tj0g-_aMM-unsplash.jpg');
+  background-image: url("../images/maria-stewart-p4tj0g-_aMM-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -830,7 +832,6 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
@@ -855,7 +856,6 @@ strong {
 .custom-form button[type="submit"]:focus {
   background: var(--navbar-bg-color);
 }
-
 
 /*---------------------------------------
   SITE FOOTER              
@@ -896,7 +896,6 @@ strong {
   margin-right: 20px;
 }
 
-
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
@@ -930,12 +929,11 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 1500px) {
-   .speakers-text-info {
+  .speakers-text-info {
     padding: 50px;
   }
 }
@@ -1054,4 +1052,3 @@ strong {
     justify-content: center;
   }
 }
-
